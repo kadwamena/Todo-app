@@ -87,10 +87,10 @@ module.exports = {
     // for each todo in todostore
     for (const todoitem of todostore) {
       
-      // if id that should be updated
+      // if this is the todo that should be updated
       if (todoitem.id == id) {
         
-        // push the new todo
+        // push the new todo, and skip the current todo
         tempStore.push(todo);
       } 
       
@@ -98,7 +98,7 @@ module.exports = {
       else tempStore.push(todoitem);
     }
 
-    // update our storage
+    // update the storage
     todostore = tempStore;
 
     // return what was saved
