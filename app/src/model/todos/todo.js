@@ -1,4 +1,4 @@
-//Import config model
+// import application wide configuration
 const config = require("../../config/config");
 
 //Create storage array
